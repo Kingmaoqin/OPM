@@ -1,20 +1,5 @@
 # NIPSCODEOPM
 
-This folder contains the paper-facing implementation of the main Confound Diffusion OPM algorithm only.
-
-Included:
-
-- `nipscodeopm/models/`: encoder, treatment/outcome heads, bridge/proxy networks, nuisance projector, and diffusion modules.
-- `nipscodeopm/losses/`: OPM moment losses, counterfactual orthogonality loss, and adaptive Dirichlet loss weighting.
-- `nipscodeopm/training/`: the core trainer that combines SSL, diffusion, and OPM objectives.
-- `nipscodeopm/configs/`: dataclass configuration and YAML loader.
-- `nipscodeopm/factory.py`: `build_model_from_config(...)` helper for constructing the algorithm model from config.
-
-Not included:
-
-- Baseline implementations.
-- Experiment launchers, grid searches, paper-table builders, rebuttal scripts, checkpoints, logs, or result files.
-- Dataset preprocessing and evaluation pipelines.
 
 Minimal usage:
 
